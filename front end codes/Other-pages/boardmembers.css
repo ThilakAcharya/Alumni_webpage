@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    overflow-x: hidden;
+  }
+  .align_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /*--------------  css for header----------------*/
+  header {
+    position: relative;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 3;
+  }
+  .container {
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    background: rgb(179, 168, 168);
+    display: flex;
+  }
+  
+  .logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    scale: 0.8;
+    content: url("/front end codes/Other-pages/Assests/college_logo.png");
+  }
+  .navbar {
+    float: right;
+    min-height: auto;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0;
+  }
+  .nav-links {
+    display: flex;
+    align-items: center;
+    float: right;
+  }
+  .nav-links li {
+    list-style-type: none;
+  }
+  .nav-links li a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0 0.7rem;
+    font-weight: 500;
+    font-size: 1.05rem;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: #fff;
+      bottom: -5px;
+      left: 0;
+      width: 0%;
+      height: 3px;
+      transition: 0.3s ease all;
+    }
+    &:hover::after {
+      width: 100%;
+    }
+  }
+  .nav-links button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0.75rem 1rem;
+    margin: 0 0.7rem;
+    border-radius: 6px;
+    background: rgb(0, 0, 0);
+    color: #ffffff;
+    font-weight: bold;
+  }
+  /*--------------  css for footer----------------*/
+  footer {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    background: black;
+    padding: 10px;
+  }
+  .footer_bar {
+    width: 100%;
+  }
+  .icons {
+    background-color: white;
+    border-radius: 12px;
+    scale: 1.5;
+    width: 25px;
+    height: 25px;
+    margin: 25px 20px;
+  }
+  .naviagtions {
+    width: 100%;
+  }
+  .footer-nav {
+    display: flex;
+  }
+  .footer-nav-item {
+    list-style-type: none;
+    margin-top: 10px;
+  }
+  .footer-nav-link {
+    text-decoration: none;
+    margin: 10px;
+    color: #fff;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .btn_container {
+    width: 100%;
+    height: max-content;
+    padding: 10px;
+  }
+  .btn_contactus {
+    display: flex;
+    width: 150px;
+    height: 50px;
+    padding: 5px 26px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background: #fff;
+  }
+  
+  .line {
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    margin-top: 15px;
+  }
+  .tnc {
+    width: 100%;
+    color: #fff;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin: 10px 0 0 0;
+  }
+
+
+/*---------------------------------------section----------*/
+section {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    background-color:rgb(0, 0, 0);
+  }
+  .card {
+    width: calc(30% - 90px);
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin: 25px;
+    overflow: hidden;
+    padding: 0px;
+    /* z-index: ; */
+  }
+
+  .card img {
+    width: 100%;
+    /* height: auto; */
+    display: block;
+    border-radius: 10px 10px 0 0;
+  }
+  .card p {
+    text-align: center; /* Center-align the text within the paragraph */
+    padding: 10px;
+    color: #676767;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .card h2 {
+    text-align: center; /* Center-align the text within the paragraph */
+    padding: 10px;
+    color: #0A0A0A;
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  } 
+   .card .card-text{
+    color: #676767; 
+
+    /* Dark - Heading 2 */
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0 0 0 10px;
+  } 
+  
+  .heads{
+    width: 100%;
+    font-size: 30px;
+    margin: 0 0 0 10%;
+    font-family: Poppins;
+    color:white
+  }
+
+  
+#development-team {
+  text-align: center;
+  padding: 20px;
+  /* background-color: #333; */
+  color:white;
+}
+
+#development-team a {
+  /* color: #fff; */
+  text-decoration: none;
+  border: solid white;
+  border-radius: 5px;
+  background-color: white;
+}
+   
+
+  @media (max-width: 830px) {
+    section {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .card{
+      height: 100%;
+      width: 70%;
+      padding-top: 5px;
+    }
+  
+    .card img {
+      height: 100%;
+      width: 100%;
+    }
+    .card p{
+        font-size: 20px;
+      }
+
+    .card h2{
+      font-size: 20px;
+    }
+    .header{
+      font-size: 20px;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    }
+    @media (max-width: 200px){
+    .heads{
+      width: 100%;
+    }
+    #development-team{
+      width: 100%;
+    }
+  }
+   
+
+
+  
